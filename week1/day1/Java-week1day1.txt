@@ -1,0 +1,200 @@
+Agenda:
+======
+9 to 9.45      - Intoduction to java, class and main method
+9.45  to 10.00 - Classroom
+10.00 to 10.45 - Primitive Datatypes
+10.45 to 11.00 - classroom
+11.00 to 11.15 - Break
+11.15 to 12.15 - Method and Object reference
+12.15 to 12.35 - classroom
+12.30 to 12.45 - Operators
+12.45 to 1.00  - Recap
+======================================================================
+
+Why Automation?
+-->to ruduce the human resource
+-->to use the time effectively
+-->to avoid the repeated work..
+
+
+Java-->Programming language
+====
+  -->Object Oriented Programming language
+          -->object-->state and behaviour
+  -->Platform Independent ->write once and run anywhere
+  -->works all kinds of OS-->windows, linus, Mac
+  -->High performace and robust
+  -->Dynamic and portable
+  
+  -->lot of library-jar files
+  
+  Java-->1.8
+  IDE-->Integrated Development Environment
+  
+  JDK -->Java Development Kit
+  JRE-->Java Runtime Environment
+  JVM-->Java Virtual Machine
+  
+  
+ Steps to create a package
+ 1.Create a Maven Project
+ 2.Right click the project -->select package 
+   select others-->search for package  
+   Naming convention for package-->start with lowercase
+  
+
+Class-->blueprint/template--> defines the properties/behaviour object
+ 
+  
+School-->number of classes/sections/departement
+Company-->department/roles/branches  
+
+
+Naming Convention->PascalCase
+
+ctrl space enter-Shortcut to create method..
+
+
+class  
+  Information/data 
+   height= numbers-->5.4ft
+   weight= numbers--60
+   phno=12434380120
+   age= 35
+   role=trainer
+   Address=chennai
+   Emotion=happy
+   initial= r
+  
+  Datatypes-->type of informantion in the script
+  
+  8 types
+  Numbers
+     int--Integer
+	 short-integer--limited size
+	 long-integer -->>6to 8 digits
+	 float-->decimal-->12.15
+	 double-->decimal-->3.1434566
+	 
+	 condition based	 
+	 boolean-->true /false
+	 
+  Alphabets/words
+  
+  String-->collection of characters-->charsequence-->includes alphanumeric and the specialcharacter
+  char-->single character  a,b..
+  
+  Primitive datatype
+      int
+	  float
+	  short
+	  long
+	  double
+	  boolean
+	  char
+    
+  Non primitive datatype-inbuilt method
+   String
+   Arrays 
+   Interface
+  =======================
+  variables and its scope 
+  =========================
+  Global /Instance Variable/class level variables
+        will be accessed by all through the class using object
+  
+  Local Variable/method level variables
+    will be available only inside the method
+  
+ Actions--> 
+   car
+   appyReverse
+   applyBreak
+   soundHorn
+   applyGear
+    
+  
+ NamingConvention for variables /Methods
+   -camelCase -->verb+noun
+  
+   car-class
+   appyReverse
+   applyBreak
+   soundHorn
+   applyGear
+   
+   Method Signature:
+   =================
+   Accessspecifier returnType methodName(Arguments)
+   
+   
+   Accessspecifier-->access 
+   
+   public-->any one access it
+   private-->only the given class have the access
+   Protected-->class of same package
+   default-->inherited classes
+  
+  returnttype
+   void-->returns nothing
+   datatypes-->returns the value based on the datatype
+   
+   
+ To access the class variables and methods
+ 
+ 
+syntax
+Classname objname=new Classname();  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Classroom:1
+===========
+1) Create a Maven Project  (completed)
+2) Create a package inside src/main/java --> week1.day1
+3) Create a class --> FirstCode inside the package
+4) Choose main method or using shortcut !!
+5) Then within the main method, do print sysout !!
+6) Save and run it (right click -> run as -> java app) !!
+
+classroom:2
+===========
+Classroom Assignment 2: 
+Goal: To understand the primitive/non-primtive data types
+a) Create a class by name: Firefox (with main method) 
+b) Create following variables inside the main method
+    1) version = 100.2  (float)
+    2) name = "firefox" (String)
+    3) visible = true (boolean)
+    4) year = 1998 (int)
+    5) logo = 'm' (char)
+c) print all data types statement
+d) run and confirm it in console
+
+classroom:3
+===========
+Create Class Mobile
+Create methodName
+1.sendSms
+print type some txt message
+2.takeSnapshot
+print type some txt 
+Create object for Mobile Class and call two method then run the code
+
+Create Class Tab
+call all the methods in Tab class
