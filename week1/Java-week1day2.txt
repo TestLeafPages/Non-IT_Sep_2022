@@ -1,0 +1,116 @@
+
+Access specifier
+================
+
+Public : any one can access it
+Private: Restricted to use in other classes
+Protected- Accessed within the package/diff package and with subclasses
+Default - Accessed within the same package and with subclasses and requires no keyword
+
+Operators:
+==========
+  Arithmetic Operators
+           +,-,/,*,=
+		   %->mod-->remainders
+		   6%3=0   		   
+  
+  Logical Operators
+       && |  
+  
+  Conditional operators
+  > < != == >=  <= 
+  ++->incremental-->adding 1 to  anynumber
+   i++     ->i=i+1-->post increment
+   i+1
+   ++i -->pre-increment
+i--	--> decremental
+i-1
+--i
+
+Control Statements
+==================
+Conditional Statement -decision 
+Looping Statement- iterative
+Jump Statement- stop/continue
+
+Conditional statement
+=====================
+if -->condition is satisfied 
+ else->not satisfied
+ 
+Looping Statement- iterative
+===========================
+for--> (input;condtion;condtion)
+
+
+ Non-Primitive
+ =============
+Arrays-->holds collection/set of data which belongs to same datatype
+
+name =vidya,yatheesh,priya,balaji,hema
+rollno=1,2,3,4,5
+phno=1233434595,345435436,13424535
+height=122,125,127
+
+
+  -->can increase or decrese the size
+  -->fixed in size/size cannot be changed
+
+datatype[] variable ={1,2,3,4,5};
+int[] num= new int[5];
+
+To Sort the Array
+Arrays.sort(arr);
+
+To find the length 
+arr.length;
+
+To print an array 
+use forloop
+To print directly->Arrays.toString(arr);
+
+   
+
+classroom:1
+Print if the given number is odd or even
+Goal: To understand the mod operator, conditional statement and logic writing
+a) Create a class by name: OddOrEven
+b) Create a main method using shortcut
+c) Declare a class variable of type of int with a value as input
+d) Write a logic to print if the given input is odd or even
+Hint: Divide the given input by 2 and if the remainder is 0 -> even else odd. 
+Use mod (%) operator to find remainder
+================
+
+Classroom:2
+Find Factorial of a given number
+Goal: To understand the for loop and logic writing
+a) Create a class by name: Factorial
+b) Create a main method using shortcut
+c) Declare a class variable of type of int with a value as input
+d) Write a logic to print the factorial of the given input
+Hint: use for loop from 1 --> n and multiply with previous multiplied value
+
+Classroom:3
+===========
+Find the max and min values of the int array
+int[] nums = {22, 3981, -19, 82, 0, 45, 37};
+max -> 3981
+min -> -19
+Goal: To understand the Arrays, sort
+a) Create a class by name: FindMinMax (with main method) in same package
+b) Create a int[] array with different data not in sorted order
+c) Write a logic to sort and find the min, max
+d) Run and Confirm the correct values are printed in console
+Hint: Use sort and find the min and max by indices
+
+Classroom:4
+===========
+Find the duplicate values in the given array
+Goal: To understand the Arrays, loop, if
+a) Create a class by name: FindDups (with main method) in same package
+b) Create a int[] array with duplicate data
+c) Write a logic to find the duplicate values
+d) Run and Confirm the duplicate values are printed in console
+Hint: Use sort to get the values sorted and within the loop, compare the next values.
+If same, then print as duplicate else continue to next value.
