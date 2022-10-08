@@ -1,0 +1,72 @@
+Today's Agenda
+==============
+Introduction to selenium
+HTML tags and locators
+Handle the drop down
+
+QTP==>Quick Test Professiona1 -->UFT-->Mercury /HP
+
+Selenium -->automate the web application-->Jason -2004
+
+2009-->Selenium WebDriver-->Simon Stewart
+
+Selenium WebDriver
+-->Open source tool
+-->Can to talk all browsers chrome, edge, firefox..
+-->Supports all OS windows,mac, android, IOs
+-->supports all programming
+
+Selenium->not automate desktop -->MS  ApachePOI (Java Library)
+   /mobile application--Appium
+   -->JDBC Connection(Java Library)
+
+
+Selenium clientlibrary --->W3CProtocol--->Driver-->Browser
+  WorldWideConsotorium Protocol
+Java -Selenium-->HTTP request -->ChromeDriver-->chromeBrowser
+							--->firefoxdriver-->FireFoxBrowser
+							-->EdgeDriver-->EdgeBrowser
+				<--Http Response	<--Driver<--Browser
+				
+				
+pom-->project object model-->holds the libraries/dependencies required by the project
+WebPage-->
+WebElements -->fields in the applications--textbox, button,radio,checkbox..
+DOM-->Document Object Model-->design of webpage/Webelement/developer tool
+To inspect any webElement in the web page-->rightclick ->inspect or spytool
+
+
+HTML
+Tagname-->the type of the element -->purple colour
+  <html>
+  <input>
+  <button>
+  <div>
+  
+ Description of the element -->attributes -->brown colour
+ --->attribute value-->blue colour
+ -->a tag-->link text-->with href attribute
+ 
+ 
+ 8 types of locators
+ ===================
+ id-->unique locator -->id attributevalue-->Proper word-->should not have number-->
+ name-->           -->should not-->numbers, duplicate,
+ className-->  -->should not-->numbers, duplicates, spaces
+ linktext-->a tag, text
+ tagname
+ Partial Linktext
+ Xpath
+ CSS selector
+ 
+ Classroom:
+ Setup the driver
+ launch the browsers
+ load the url
+ Enter the username as demosalesManager
+ Enter the password as crmsfa
+ click Login
+ 
+ 
+  
+
