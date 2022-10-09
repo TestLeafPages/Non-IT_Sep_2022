@@ -1,0 +1,143 @@
+Today's Agenda
+=============
+Handling dropdown
+Basic Xpath
+Advanced Xpath
+
+
+Dropdown 
+========
+ -The element should be designed with select tag
+ 
+ Select class-->selenium
+ 
+ Step:1 
+ Intialize/create instance for the select class
+ 
+ Select opt=new Select(Webelement);
+ 
+ Step:2 
+ 3 methods available in Select class
+ =============
+ 1.selectByIndex-->starts with 0
+ 2.selectByVisibleText;
+ 3.selectByValue
+ 
+ Classroom
+ In Create Lead
+ Select  the dropdown
+ Ownership ->selectbyIndex
+ Currency-->selectByValue
+ country->selectByVisibleText
+ 
+ ==================================
+ Basic locators
+  --id -->not proper id
+  --classname--not proper classname and it is duplicated
+  --name--not proper classname and it is duplicated  
+  --linktext-->doesnot have a(anchor) tag and also not value /having number
+ 
+ XPath-->xml path -->accurate address to the Webelement
+ 2types:
+ =========
+ Absolute Xpath
+ Relative Xpath
+ 
+ 
+ Absolute Xpath->complete address of the webelement
+ ==============
+ start with /
+ starts with root element html
+ Xpath index always starts with 1
+ 
+ /html/body/div[2]/div[2]/div/form/input -->not recommended
+ 
+ Relative Xpath
+ ==============
+ Starts //
+ syntax:
+ //tagname[@attribute='attribute value']
+ 
+ 1.Attribute based xpath
+ ========================
+ //tagname[@attribute='attribute value']
+ //label[@for='username']
+ //input[@id='username']
+ 
+ 2.Text based xpath
+ ==================
+ //tagname[text()='textvalue']
+ //h2[text()='Leaftaps Login']
+ 
+ 3.Partial attribute/text based xpath
+ ====================================
+ //tagname[contains(@attribute,'partial atttribute value')]
+ //input[contains(@value,'Out')]  -->attribute based
+ 
+ //a[contains(text(),'SFA')]-->text based 
+ 
+ 4. Collection based xpath -->using index
+ ========================================
+  (relative xapth)[index]
+ (//tagname[contains(@attribute,'partial atttribute value')])[index]
+ 
+ (//input[@class='inputLogin'])[2]
+ 
+ Recommended -index 5/6
+ 
+ Advanced Xpath/Axes Xpath/ Relationship based xapth
+ ===================================================
+<form> 
+ <div>
+  <input>
+    <a>
+ <div>
+   <input>
+      <a>
+ <div>
+ 
+ Parent to child(one step down)
+ ===============
+ (relative xpath of parent)/child (relative xpath)or tagname
+ //p[@class='top']/input
+ //form/p[2]
+  
+ Grandparent to grandChild  (two step down)
+ ==========================
+ (relative xpath of grandparent)//grandchild
+ //form[@id='login']//input
+  
+ Child to parent
+ ===============
+ (relative xpath of child)/parent::tagname of parent
+ //input[@id='username']/parent::p 
+ 
+ Grandchild to Grandparent
+ =========================
+ (relative xpath of grandChild)/ancestor::tagname 
+ //input[@id='username']/ancestor::div[@id='form']
+ 
+ 
+ Sibiling-->elder to younger
+ ===========================
+ (relative xpath of elder)/following-sibling::tagname of younger 
+ 
+ //p[@class='top']/following-sibling::p[@attribute='attributevalue']
+  //p[@class='top']/following-sibling::p/input
+  
+         -->younger to elder
+		 ***********************
+(relative xpath of younger)/preceding-sibling::tagname of elder
+
+//p[2]/preceding-sibling::p
+//input[@id='password']/preceding-sibling::label
+		 
+ Cousin -->elder to younger
+ ==============================
+ 
+ (relative xpath of elder)/following::tagname
+ //label[@for='username']/following::input
+ 
+        --->younger to elder
+ (relative xpath of younger)/preceding::tagname
+ //input[@class='decorativeSubmit']/preceding::input
