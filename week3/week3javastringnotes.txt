@@ -1,0 +1,136 @@
+String:-->collection of characters /charSequence  -->char[]
+=====
+
+Characters-->Ascii Values
+String -->class
+=================
+String-->Immutable-->not changeable
+
+String literal--> String s="Testleaf"
+String Object-->declaring the string using new keyword
+String s1=new String("Vidya");
+
+
+length()-->method to get the size/length of the String(Characterseq)
+concat-->append any string 
+charAt-->to get the character from a given index
+toCharArray-->to convert a string into character array
+equals-->to compare the String content
+equalsignoreCase-->to compare two strings irrespective of the cases
+split()-->to split the string based on delimiter
+
+
+Classroom:2
+*************
+Find the count of given character in a String
+String input="TestLeaf";
+//To get the count of e;
+Goal: To understand the String, loop, if 
+a) Create a class by name: FindCharCount (with main method) in same package
+initialize the count variable 
+b)Convert the String to character array (use toCharArray)
+c)Use forloop to iterate each character in the array
+d)Compare with the input with the required character using if condition (==) 
+int count=0;
+for(;;i++)
+  {
+  if(ch[i]=='e']
+  {
+  count++;
+  }
+  }
+  syso->count
+e)if matches, keep adding the count. Finally, print the count.
+f) Run and Confirm the correct character count is printed in console
+
+
+OOPs:
+====
+Object oriented Programming language
+
+class-->blueprint /template 
+ variables
+ methods
+ 
+object-->state and behaviour
+
+-->reusability and maintaintabily
+
+Inheritance
+          -->is-A relationship
+		  -->parentclass/baseclass to child-->subclass/derived class
+		  -->keyword -->extends
+		  
+		  Single Inheritance -->Parent to child
+		  Multilevel Inheritance-->Grandparent-->parent-->child
+		  Hirerachial-->parent-->brother1 and brother2
+		  
+		  Multiple Inheritance
+		  
+		  
+classsroom:3
+***************
+Create a class Vehicle with two methods soundHorn and applyBreak
+Create a class Bike  with two methods noOfWheels and engineCapacity
+Create a class Car  with two methods applyGear and wiper
+Create a class Hyundai with two methods airBags and sunRoof
+Create a class Ktm with modelName and discBrake
+
+
+Inherit the vehicle class to Bike and Car-->hirerachial
+Inherit the Car class to Hyundai 
+Inherit the Bike class to ktm -->multilevel inheritance
+Create concreteclass 
+
+create obj for Hyundai and call all the methods
+create obj for ktm and call all the methods
+		  
+
+
+Polymorphism
+============
+ --> taking many forms
+ 
+ CompileTime polymorphism/Static /Early Binding/Overloading
+ RuntimePolymorphism/Dynamic/Late Binding/Overriding
+
+
+OverLoading -->same class , same method with different arguments
+Overriding-->Same method ,Same arguments with different classes-->inheritance Concept
+
+
+super keyword-->access the parent method which is overridden in child class
+
+
+Classroom:4
+===========
+Create class Calculator with below Methods:
+- 2 methods for add (1 method with 2 args, 1 method with 3 args)
+calc
+  add(int a,int b)
+  {
+  int x=a+b;}
+  add(int a,float b,float c){
+  {
+  int y=a+b+c;}
+  
+
+- 2 methods for sub(1 method with 2 int agrs, 1 method with 1 int arg and 1 double arg)
+
+Create Object for Calculator class, and execute all methods
+
+
+ClassRoom:5
+============
+    Class     :BankInfo
+    Methods :saving(),fixed(),deposit()
+     Class     :AxisBank
+     Methods :deposit() 
+Description:
+You have to override the method deposit in AxisBank.
+
+
+
+
+
+
