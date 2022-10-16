@@ -1,0 +1,129 @@
+OOPs
+====
+class
+Object
+Inheritance-->extends
+Polymorphism-->Overloading and Overriding
+================================
+Abstraction
+===========
+  Overview/ideas of the concept
+  deals with ideas rather than the actual content
+  -Hiding the unnecessary datas from the users and displaying only the relavant data
+   
+  Interface-->100% abstraction
+  Abstract class-->0-100% abstraction
+  
+  
+class -->methods,variables
+implemented
+
+method{
+}
+Interface-->
+     template/blueprint-->not implemented-->design
+	 resume-->
+	 EmptyLand
+	 
+	 
+	 
+	class 
+	 public class LearnJava{
+	 
+	 method(){}
+	 }
+	 
+	 public Interface Resume{
+	 
+	 methodsyntax
+	 
+	 public void methodName();-->No body/ abstract method
+	 
+	 }
+	 
+	 *To use the umimplemented method in the concrete class-->implements
+     * Cannot Create Object for the interface classes
+	 *Acheieve the multiple inheritace with Interface
+	 *extends
+	 class to class  ->Inheritace-->extends
+	 Interface to Interface-->extends
+	 class to Interface-->implements
+	 abstractclass to abstract class-->extends
+	 
+ 
+      Class implement Interface
+
+      class /interface cannot extend viceversa
+
+	Abstract class -->0 to 100%
+	
+	-->unimplemented methods
+	-->implemented method
+
+
+public abstract class classname(){
+
+implemented method
+public void method1(){
+}
+
+public abstract void m2();
+
+Collection --.interface
+==========
+List 
+Set
+List-->grow /decrease size of the data structure
+dynamic -->change
+
+-->maintains the insertion order
+
+List is an interface-->need a implementation class
+ArrayList -->
+LinkedList-->
+
+
+Wrapper class -->stores the type of data in the given dataStucture
+int     Integer
+String   String
+float   Float
+double  Double
+long    Long
+
+
+<>-->generic
+methods
+list.add()-->based on datatype/generic
+list.set()
+list.remove()-->based on the index
+
+
+list allows duplicate
+
+set-->interface
+ -->does not allow duplicate value
+ -->Index -->cannot use get(i)
+Implementation class
+  -->HashSet -->random order-->hash alogrithm
+  -->LinkedHashSet-->Insertion Order
+  -->TreeSet-->based on Ascii
+collections-->class
+collection-->interface
+
+
+Classroom:1
+==========
+Create an Interface for the Mobile !
+Write 3 methods (abstract) - sendSMS, dialNumber, switchOn
+Create a concrete Class - IPhone (-> Mobile)
+Make sure all 3 methods appear and 
+Also make sure you could not create object for Interface !
+
+
+ClassRoom:2
+==========
+ 1. List - {Adam,Ben, Zara, Adam, Charlie, James, Ben} 
+Print only the duplicate - Adam, Ben 
+ 2. List - {Adam,Ben, Zara, Adam, Charlie, James, Ben, Adam, George, Adam} 
+Print the number of times Adam Occured - Adam - 4
+
