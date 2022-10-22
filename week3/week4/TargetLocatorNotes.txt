@@ -1,0 +1,102 @@
+Alert-->Pop up message / information/warning from the application
+====
+-->without handling the alert ,other elements of the webpage can not be interacted
+-->cannot be inspectable
+ Two types
+ ======= 
+ Modal Alert:
+ ==========
+   --Cannot inspect
+   ---Without handling the modal alert, other interaction cannot be done in webpage
+ 
+ 3types
+ ======
+   Simple Alert-->accept/one single click
+   Confirmation Alert-->accept and reject
+   Prompt Alert-->getting input from the user and then accept/reject
+ 
+ driver.switchTo().alert();
+ 
+Alert is an interface-->RemoteAlert
+ 
+ Exception:
+  UnhandledAlertException-->when not handled the alert present in the webpage
+  NoAlertPresentException-->If not the pop up is alert
+  
+ Non-Modal Alert: 
+    Normal pop up which can be inspected as like normal webElement
+	
+============================
+Frames:
+======	
+iframe-->inline frame
+  -->DOM inside a DOM
+  -->HTML inside a HTML
+
+driver.switchTo().frame()-->using index/locator-> id /name/frameElement
+	
+using index-->0
+
+
+nested frames-->iframe is inside other iframe
+
+Window Handling-->handler -->address which unique to all the child windows
+===============
+switchTo
+
+driver.getWindowhandle-->returns the (Alphanumeric String )address/handle of current active window which the driver has the control over it
+
+driver.getWindowhandles-->returns the set of window handles of opened windows/tab
+
+//first know no of windows-->getWindowHandles
+		//convert set to list
+		//switchTo window with index
+		
+driver.close();//close the current active window 	
+driver.quit();//close all the browsers
+				
+
+
+
+
+
+
+
+Alert-Classroom
+
+
+https://chercher.tech/practice/practice-pop-ups-selenium-webdriver
+
+
+
+
+
+ClassRoom for Alerts and Frames:
+------------------------------------------------
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_confirm
+Click Try It Button
+Click OK/Cancel in the alert
+Confirm the action is performed correctly by verifying the text !!
+ 
+ *Hint*
+Switch to the frame
+Then click Try It with xpath
+Switch to the alert and Enter your name in alert box
+Then perform accept / dismiss
+Get the text using id 
+Verify the text based on the action
+
+
+classroom asssignment:
+
+
+Alerts and Window handling
+---------------------------
+1. Load https://www.irctc.co.in/
+2. Click on OK button in the dialog  
+3. Click on FLIGHTS link            
+4. Go to the Flights tab
+5. Print the customer care email id
+6. Close the First tab(Train ticket booking) alone
+
