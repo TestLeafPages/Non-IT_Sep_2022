@@ -1,0 +1,81 @@
+Today's Agenda
+==============
+9.00 to 9.30 Browser Notification 
+9.30 to 10.45 WebTable  
+10.45 to 11.10 classroom
+11.10 to 11.25 Break
+11.40 to 12.15 Actions class->mouse events
+12.15 to 12.30 classroom
+12.30 to 12.50 SnapShot
+12.50 to 1.00 Recap
+==================================
+
+Browser Notifications: 
+	WebDriverManager.chromedriver().setup();
+		ChromeOptions opt=new ChromeOptions();
+		opt.addArguments("--disable-notifications");
+		ChromeDriver driver=new ChromeDriver(opt);
+ ==================================================================
+WebTable:
+=========
+ -  Hold the data in a tabular format-->rows and columns
+  -static and dynamic tables 
+
+
+Table Structure
+=================
+<table>-->table name
+<thead> -->table header
+ <tbody>--.table body
+   <tr>--> table row
+	 <th></th> -->table head for columns
+   </tr>
+   <tr>
+	 <td></td> -->table data 
+     <td></td>
+	 <td></td>
+	</tr>
+ </tbody>
+ </table>
+
+===========================
+Mouse events-->AUI-Advanced user Interactions
+
+Actions act=new Actions(driver);		
+		act.moveToElement(house).perform();-->build the sequence of mouse actions		
+Mouse Actions:
+mousehover-->moveToElement()
+right click-->contextclick()
+double click
+drag and drop-->dragAnddropby()-->change the element position from present to new location 
+				-->draganddrop-->from source location to targeted location
+Keyboard:
+keys control keys
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Classroom
+==========
+Erail:
+Step:1-Launch the url (https://erail.in/)
+Step:2-Enter From as MAS
+Step:3-Enter To as MDU
+Step:4-Uncheck sort on Date  
+Step:5-Get the Train Names
+DataTable TrainList TrainListHeader stickyTrainListHeader-TableName
+
+
+Ensure whether there are duplicate train names
+Hint:use size() to check duplicate
