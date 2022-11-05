@@ -1,0 +1,199 @@
+Today's Agenda:
+===============
+TestNG framework
+
+If suppose the testcases are about 5000
+
+-->cant possible to run at a single run/parallel run /different browser
+  ->not possible to run every individual testcases
+-->is it posible to run a particular set of testcases under one category
+--->is that possible to get the report as a standalone  testcases
+--->is the testcase gives the status of the testcase  --pass/fail
+
+
+TestNG Framework:
+================
+NG-Next Generation
+
+TestNg -Execution Framework-Configure the execution
+  -Cedric Beust
+  jUnit--> java
+  nUnit-->.net
+  =============
+ TestNg:
+ 
+ -->Execute the multiple testcases sequentially in a single run
+ --->Execute the multiple testcases parallelly in a single run/parallel
+ --->Execute in different browsers -->cross browser testing
+ --->Status of the testcase-->Passed and failed status
+ --->Report of testcase-->Emailable, index
+ --->Control the flow of execution using annotations and attributes
+ --->Pass multiple test data--parametrization-static and dynamic
+
+=============
+Pre-Requirements to configure the testng testcases
+
+Checked for the plugins-->Eclipse Marketplace/Help->Install new software
+Added the Dependency in pom.xml
+
+
+Step:1 ->Download the testcases and paste it into your eclipse
+
+Step:2-->convert the main method into a normal method
+
+public static void main(String[] args)-->public void runCreate(){}
+
+Step:3 Add @Test on top the method
+====================================================================
+To execute the multiple testcases Sequentially
+
+Step:1 Select all the testcases having @Test 
+           -->rightclick -->TestNg->Convert to TestNg-->finish
+
+        Create a XML file 
+		
+		XML-->Extended Markup language 
+		
+		
+<suite name="Suite">-->topmost layer of the project //one suite
+  <test thread-count="5" name="Test">-->modules -->Leads /Contacts tests
+                                           -->testtypes-->Regression /Smoke
+    <classes>	
+    	<class name="testcase.CreateLead"/>//packagename.classname	  
+      <class name="Week3day2.inheritance"/>      
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Test">-->modules -->Leads /Contacts tests
+                                           -->testtypes-->Regression /Smoke
+    <classes>	
+    	<class name="testcase.CreateLead"/>//packagename.classname	  
+      <class name="Week3day2.inheritance"/>      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+TO get the information of the exception in the console/log in  the console/log
+
+attribute in the xml -->Verbose
+
+
+parallel attribute will be set in xml file to execute the testcases parallely
+
+parallel= classes-->execute the Testcase under the tag<classes> parallely
+ <classes>	
+    	<class name="testcase.CreateLead"/>//packagename.classname	  
+      <class name="Week3day2.inheritance"/>      
+    </classes>
+
+parallel=tests-->execute the testcases under <test> parallely
+ <test name=test1>
+ <classes>	
+    <class name="testcase.CreateLead"/>//packagename.classname	  
+     <class name="Week3day2.inheritance"/>      
+    </classes>
+ </test>
+ <test name=test2>
+ <classes>	
+      <class name="testcase.CreateLead"/>//packagename.classname	  
+      <class name="Week3day2.inheritance"/>      
+    </classes> 
+ </test>
+ 
+ test1 and test2 execute parallely -->2 browsers will be launched ..
+ 
+ 
+ Annotations:
+ ===========
+ 
+Run before suite 
+Run before all tests  
+Run before all test classes 
+Run before test methods
+Learning the hirerchy of Annotation
+Run after test methods
+Run after all test classes 
+Run after all tests
+ 
+ 
+ 
+ <suite name="Suite">-->topmost layer of the project //one suite
+  <test thread-count="5" name="Test">-->modules -->Leads /Contacts tests
+                                           -->testtypes-->Regression /Smoke    <classes>	
+    	<class name="testcase.CreateLead"/>//packagename.classname	  
+      <class name="Week3day2.inheritance"/>      
+    </classes>
+  </test> <!-- Test -->
+  </suite>
+  
+  
+  
+@BeforeSuite -->template for report
+     @BeforeTest-->db connection
+	   @BeforeClass-->
+	     @BeforeMethod
+		   @Test
+		 @AfterMethod
+		@AfterClass
+	@AfterTest
+@Aftersuite
+Run before suite->@BeforeSuite
+Run before all tests -> @BeforeTest
+Run before all test classes->@BeforeClass 
+Run before test methods->@BeforeMethod
+
+Learning the hirerchy of Annotation
+
+Run after test methods->@AfterMethod
+
+Run before test methods->@BeforeMethod
+
+Learning the hirerchy of Annotation2
+
+Run after test methods->@AfterMethod 
+Run after all test classes->@AfterClass
+Run after all tests->@AfterTest 
+
+
+Run after suite->@AfterSuite
+
+
+
+Classroom:1
+========
+https://github.com/TestLeafPages/SelAug2021/blob/main/testcase.zip
+2. Download testcase.zip
+3. Extract the zip file
+4. copy the testcase folder
+5. paste it under scr/main/java
+
+Steps to convert standalone testcase into TestNG testcase
+----------------------------------------------------------
+1. Remove static keyword from main method
+2. Remove String[] args argument
+3. Rename main() into meaningful method name
+4. Apply @Test on top of the method
+===========================================================
+
+
+Class room-2
+=========
+Eecute the testcase Sequentially and parallel
+Steps: Select the testcases-->rightclick Testng-->convert to TestNg
+
+For Parrallel-->select parallel mode-Classes 
+Execute from Xml file
+
+
+
+
+
+Classroom
+==========
+Create a common  as ProjectSpecificMethod
+Move all the common steps to common class (remove those steps  in the testcases)
+Use @Before and @After Method annotation to define your preCondition and postCondition Methods
+Extend the common class to leads classes
+
+
