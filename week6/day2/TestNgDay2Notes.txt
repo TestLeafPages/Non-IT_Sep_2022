@@ -1,0 +1,87 @@
+Today's Agenda
+============
+
+Attributes and Parametrization
+
+Attribute
+---------
+
+priority-->it takes least value to excute the test method 
+========
+priority=value (1,2,3,)
+
+default value=0
+
+enabled->to ignore the given testcase
+=======
+enabled->default value-true
+TimeOut ->individual testcase to set the timeout condition
+
+InvocationCount-->to call a particular test method multiple time
+default value= 1
+invocationTimeOut->to set a timeout condition to all the invoked testcases
+
+ThreadPoolSize-->The testcases which invocation count will be executed parallely
+always the threadPoolsize will come along with invocation count
+
+To inject the dependencies , between the testmethods
+dependsOnMethod="Testmethod name"
+
+Classroom:1
+Create 5 test methods
+
+apply priority to 2 test methods
+apply dependecy to one method
+apply enabled to one method
+apply invocation count and threadpoolsize
+
+
+Parametrization
+==============
+static data-->url,credentials-Username,browser
+dynamic data-->multiple set of data-->cname,fname, lname
+
+
+To pramatrize the static datas using
+@Parameters
+<parameter>
+
+
+Classroom
+Execute in parallel and Seq
+In Xml ->
+<parameter name="url" value=""></parameter>
+
+In ProjectSpecificmethod
+@Parameters({"url","",""})
+
+Pass the argument to the method and the test step-->get(url) and in send keys
+
+
+Dyanmic datas;
+header
+values
+
+Company name  firstname		Lastname
+TL				Vidya		R
+Testleaf		Hari		R
+Testleaf		Princilla	R
+
+
+Structure of two dimentional array
+[r][c]
+
+[1][1]=Tl
+[1][2]=Vidya
+[1][3]=R
+
+classroom-dynamic datas
+
+Create a method with String[][]
+have 2 rows and 3 columns and return the data
+annotate the method with dataprovider
+add the attribute dataprovider =methodname
+
+pass argument of the req dataset to the teststep
+
+
