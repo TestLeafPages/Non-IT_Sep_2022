@@ -1,0 +1,82 @@
+Today's Agenda
+==============
+To Read Excel    
+To Integrate with testcase
+Implementing Common DataProvider
+==============================================
+
+Dynamic datas;
+header
+values
+
+Companyname   firstname		Lastname
+TL				Vidya		R
+Testleaf		Hari		R
+Testleaf		Princilla	R
+
+
+Structure of two dimentional array
+[r][c]
+
+[1][1]=Tl ==>data[0][0]
+[1][2]=Vidya
+[1][3]=R
+
+classroom-dynamic datas
+
+Create a method with String[][]
+have 2 rows and 3 columns and return the data
+annotate the method with dataprovider
+add the attribute dataprovider =methodname
+
+pass argument of the req dataset to the teststep
+=====================================================
+
+To Read the data from Excel Sheet
+================================
+Java library -Apachi POI
+
+ Api to integrate with Ms files
+
+=====================================
+Dependencies 
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.2</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.2</version>
+</dependency>
+
+Classroom:1
+Create a class with main method
+Step:1 Set the path for wb
+step:2 Get the sheet
+Step 3 Get the row count using the sheet
+step:4 Get the colcount using one row
+Step:5 Use For loop to iterate into each cell
+Step:6 Print the values from each cell
+===========================================
+
+TO integrate the excel script with tc-DataProvider
+
+
+*mismatch of index between readExcel loop and string [][] of dp
+*Return data 
+
+
+To integrate excel data with tc:
+------------------------------------
+Convert the main method into normal static method
+Create String[][]data with row count and colcount as size
+assign the values to the data[][] and return it.
+call the readexcel file to create lead testcase
+
+
+TO make the common integration of Readexcelfile to all testcase
+*Append the filename as an argument to the excel workbook path in readexcelfiel
+*pass the argument(variable) in the respect testcase 
+*make that variable public in projecSpecificmethod
