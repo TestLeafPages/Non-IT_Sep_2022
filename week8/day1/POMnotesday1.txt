@@ -1,0 +1,67 @@
+Agenda of Today:
+===============
+Page Object Model(POM)
+       -What is POM
+	   -Why/When do we need
+	   -How to Use
+	   
+Page Object Model:
+=================
+    It's a design pattern used in test automation.
+	foundation to build automation frame work
+	
+	Why?
+	Predefined shape-->mould
+	Uniformity in shape all the idols
+	Productivity
+	Reusability
+	scalability
+	Efficient 
+	Reliabilty
+	
+	How-->separate the WebElements/UI and the testcase
+	
+	actions -->click, sendkeys....
+	
+	POM-->create object repository for each pages in my application
+	
+	CreateLead
+	
+	Login--->CrmSFA---->Leads --->CreateLead--->CreateLeadForm
+	Login -->logout
+	
+	
+	
+	Username   crmlink	leadslink-->createLead link-->companyname
+													firstname
+	password												lastname
+	Login
+	
+	
+	Rules to setup the POM:
+	======================
+	
+	create 4 packages
+	        Baseclass-->common methods
+			pages--->java class for each navigation
+			testcase-->execution
+			utils-->excel code
+	
+	
+	1.Create commonclass in baseclass package and add the browser setup 
+	2.Create pages for each navigation of the application
+	3.Create methods for each webElement and its action
+	4.Add return type to the respective action/control
+	5.Create a class in testcase package which extends the commonclass and call the methods
+	6.Declare the ChromeDriver as Static
+	
+	
+	
+	thread 1-->loginlogout-->driver instance
+	thread2 -->createLead--->driver instance
+	
+	
+	Remove Static in ChromeDriver declaration
+	Add Parametrized Constructor call to each page of the respective class
+	Pass the driver arg where the class returned
+	Pass the driver arg in testcase
