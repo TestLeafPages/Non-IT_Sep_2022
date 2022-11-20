@@ -1,0 +1,97 @@
+Agenda for Today
+================
+Data Integration With POM
+Exception Handling
+Extent Report Integration with POM
+=========================================
+
+Exception Handling:
+===================
+ Exception-->abnormal condition which affect the execution flow
+ 
+ 
+ try-->actual code which may may not throw exception 
+ catch-->handle exception
+ finally
+
+
+Exception :
+Checked Exception -->Compiletime Exception
+
+throw -->Explicity
+throws-->
+
+
+
+
+Unchecked Exception-->Runtime exceptions
+
+All selenium exception-->Nosuch Element
+						StaleElement
+						ElementclickInterception
+						NullPointer
+						ArithmeticException
+						
+
+try catch
+try catch catch-->Multiple Catches
+try -->nested try catch block
+  try catch
+ catch
+ 
+try catch finally
+try finally
+
+=====================
+
+ExtentReport-->third party application
+=============
+Report -->Interactive and graphical repesentation
+
+ExtentHTMLReporter
+ExtentReport
+========================
+Integrating Extent Report with POM
+************************************
+
+1.Create a methods as startReport() 
+      add the first 4 steps and annotate the method with @BeforeSuite
+2.Create a method as endReport() 
+	add extent.flush() and annotate with @AfterSuite
+
+
+
+@BeforeSuite-->report started
+	@BeforeTest-->set the filename, testname
+		@BeforeClass-->
+			@DataProvider-->readexcel
+				@BeforeMethod-->common methods
+						@Test-->test steps
+
+3.Create a method as testDetails to add the testname, testdesc , author and category
+and annotate the method with @BeforeClass
+ @BeforeTest -->setfile()-->set the values to the testname,desc, author and category
+
+
+4.create a method as reportstep and add status which is to be received from pages
+
+5.Create a takesnap method to apped the screenshot to the reposrt step
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>3.1.5</version>
+		</dependency>
